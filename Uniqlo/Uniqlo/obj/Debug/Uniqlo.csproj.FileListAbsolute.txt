@@ -1,0 +1,11 @@
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\bin\Debug\Uniqlo.exe.config
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\bin\Debug\Uniqlo.exe
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\bin\Debug\Uniqlo.pdb
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.csproj.AssemblyReference.cache
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.csproj.SuggestedBindingRedirects.cache
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.Properties.Resources.resources
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.csproj.GenerateResource.cache
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.csproj.CoreCompileInputs.cache
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.exe
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.pdb
+D:\dev\DistributedDatabase\Uniqlo\Uniqlo\obj\Debug\Uniqlo.Form1.resources
