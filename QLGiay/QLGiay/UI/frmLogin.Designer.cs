@@ -50,6 +50,7 @@ namespace QLGiay.UI
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -125,6 +126,7 @@ namespace QLGiay.UI
             this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txtPass);
             this.panel2.Controls.Add(this.txtUser);
@@ -243,6 +245,7 @@ namespace QLGiay.UI
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(317, 23);
             this.txtPass.TabIndex = 2;
+            this.txtPass.Text = "123456";
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // txtUser
@@ -258,6 +261,7 @@ namespace QLGiay.UI
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(317, 23);
             this.txtUser.TabIndex = 1;
+            this.txtUser.Text = "giamdoc";
             // 
             // label3
             // 
@@ -272,6 +276,17 @@ namespace QLGiay.UI
             this.label3.Size = new System.Drawing.Size(137, 54);
             this.label3.TabIndex = 0;
             this.label3.Text = "Login";
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(86)))), ((int)(((byte)(137)))));
+            this.panel5.Location = new System.Drawing.Point(143, 319);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(317, 3);
+            this.panel5.TabIndex = 2;
             // 
             // frmLogin
             // 
@@ -314,5 +329,6 @@ namespace QLGiay.UI
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Panel panel5;
     }
 }
