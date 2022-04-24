@@ -116,3 +116,4 @@ D:\dev\DistributedDatabase\QLGiay\QLGiay\bin\Debug\LiveCharts.Wpf.xml
 D:\dev\DistributedDatabase\QLGiay\QLGiay\obj\Debug\QLGiay.csproj.CopyComplete
 D:\dev\DistributedDatabase\QLGiay\QLGiay\obj\Debug\QLUniqlo.exe
 D:\dev\DistributedDatabase\QLGiay\QLGiay\obj\Debug\QLUniqlo.pdb
+D:\dev\DistributedDatabase\QLGiay\QLGiay\obj\Debug\QLUniqlo.UI.frmEmployee.resources

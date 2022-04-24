@@ -33,15 +33,11 @@ namespace QLGiay.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlHomeSubmenu = new System.Windows.Forms.Panel();
-            this.btnLady = new System.Windows.Forms.Button();
-            this.btnGentlemen = new System.Windows.Forms.Button();
+            this.btnDaLat = new System.Windows.Forms.Button();
+            this.btnAll = new System.Windows.Forms.Button();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
             this.btnRevenue = new System.Windows.Forms.Button();
-            this.btnCustomer = new System.Windows.Forms.Button();
-            this.pnlManageSubMenu = new System.Windows.Forms.Panel();
-            this.btnCategory = new System.Windows.Forms.Button();
-            this.btnManagement = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBill = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,8 +49,6 @@ namespace QLGiay.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlHomeSubmenu.SuspendLayout();
             this.pnlSideMenu.SuspendLayout();
-            this.pnlManageSubMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
@@ -66,71 +60,74 @@ namespace QLGiay.UI
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 56);
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Margin = new System.Windows.Forms.Padding(4);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(321, 63);
             this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "Home";
+            this.btnHome.Text = "Trang Chủ";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pnlHomeSubmenu
             // 
             this.pnlHomeSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.pnlHomeSubmenu.Controls.Add(this.btnLady);
-            this.pnlHomeSubmenu.Controls.Add(this.btnGentlemen);
+            this.pnlHomeSubmenu.Controls.Add(this.btnDaLat);
+            this.pnlHomeSubmenu.Controls.Add(this.btnAll);
             this.pnlHomeSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHomeSubmenu.Location = new System.Drawing.Point(0, 119);
+            this.pnlHomeSubmenu.Location = new System.Drawing.Point(0, 63);
             this.pnlHomeSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHomeSubmenu.Name = "pnlHomeSubmenu";
-            this.pnlHomeSubmenu.Size = new System.Drawing.Size(321, 120);
+            this.pnlHomeSubmenu.Size = new System.Drawing.Size(321, 123);
             this.pnlHomeSubmenu.TabIndex = 2;
             // 
-            // btnLady
+            // btnDaLat
             // 
-            this.btnLady.FlatAppearance.BorderSize = 0;
-            this.btnLady.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLady.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLady.Location = new System.Drawing.Point(0, 56);
-            this.btnLady.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLady.Name = "btnLady";
-            this.btnLady.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.btnLady.Size = new System.Drawing.Size(317, 56);
-            this.btnLady.TabIndex = 1;
-            this.btnLady.Text = "Lady";
-            this.btnLady.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLady.UseVisualStyleBackColor = true;
+            this.btnDaLat.FlatAppearance.BorderSize = 0;
+            this.btnDaLat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDaLat.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDaLat.ForeColor = System.Drawing.Color.LightGray;
+            this.btnDaLat.Location = new System.Drawing.Point(0, 56);
+            this.btnDaLat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDaLat.Name = "btnDaLat";
+            this.btnDaLat.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.btnDaLat.Size = new System.Drawing.Size(317, 56);
+            this.btnDaLat.TabIndex = 1;
+            this.btnDaLat.Text = "Thêm Nhân Viên";
+            this.btnDaLat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDaLat.UseVisualStyleBackColor = true;
+            this.btnDaLat.Click += new System.EventHandler(this.btnDaLat_Click);
             // 
-            // btnGentlemen
+            // btnAll
             // 
-            this.btnGentlemen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGentlemen.FlatAppearance.BorderSize = 0;
-            this.btnGentlemen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGentlemen.ForeColor = System.Drawing.Color.LightGray;
-            this.btnGentlemen.Location = new System.Drawing.Point(0, 0);
-            this.btnGentlemen.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGentlemen.Name = "btnGentlemen";
-            this.btnGentlemen.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.btnGentlemen.Size = new System.Drawing.Size(321, 56);
-            this.btnGentlemen.TabIndex = 0;
-            this.btnGentlemen.Text = "Gentlemen";
-            this.btnGentlemen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGentlemen.UseVisualStyleBackColor = true;
+            this.btnAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAll.FlatAppearance.BorderSize = 0;
+            this.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAll.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAll.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAll.Location = new System.Drawing.Point(0, 0);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.btnAll.Size = new System.Drawing.Size(321, 56);
+            this.btnAll.TabIndex = 0;
+            this.btnAll.Text = "Nhân Viên";
+            this.btnAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // pnlSideMenu
             // 
             this.pnlSideMenu.AutoScroll = true;
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.pnlSideMenu.Controls.Add(this.btnRevenue);
-            this.pnlSideMenu.Controls.Add(this.btnCustomer);
-            this.pnlSideMenu.Controls.Add(this.pnlManageSubMenu);
-            this.pnlSideMenu.Controls.Add(this.btnManagement);
+            this.pnlSideMenu.Controls.Add(this.btnBill);
             this.pnlSideMenu.Controls.Add(this.pnlHomeSubmenu);
             this.pnlSideMenu.Controls.Add(this.btnHome);
-            this.pnlSideMenu.Controls.Add(this.panel1);
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(4);
@@ -143,85 +140,34 @@ namespace QLGiay.UI
             this.btnRevenue.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRevenue.FlatAppearance.BorderSize = 0;
             this.btnRevenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRevenue.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRevenue.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnRevenue.Image = ((System.Drawing.Image)(resources.GetObject("btnRevenue.Image")));
             this.btnRevenue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRevenue.Location = new System.Drawing.Point(0, 432);
+            this.btnRevenue.Location = new System.Drawing.Point(0, 249);
             this.btnRevenue.Margin = new System.Windows.Forms.Padding(4);
             this.btnRevenue.Name = "btnRevenue";
             this.btnRevenue.Size = new System.Drawing.Size(321, 63);
             this.btnRevenue.TabIndex = 7;
-            this.btnRevenue.Text = "Revenue";
+            this.btnRevenue.Text = "Thống Kê";
             this.btnRevenue.UseVisualStyleBackColor = true;
             // 
-            // btnCustomer
+            // btnBill
             // 
-            this.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCustomer.FlatAppearance.BorderSize = 0;
-            this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustomer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
-            this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(0, 369);
-            this.btnCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(321, 63);
-            this.btnCustomer.TabIndex = 6;
-            this.btnCustomer.Text = "Customer";
-            this.btnCustomer.UseVisualStyleBackColor = true;
-            // 
-            // pnlManageSubMenu
-            // 
-            this.pnlManageSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.pnlManageSubMenu.Controls.Add(this.btnCategory);
-            this.pnlManageSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlManageSubMenu.Location = new System.Drawing.Point(0, 302);
-            this.pnlManageSubMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlManageSubMenu.Name = "pnlManageSubMenu";
-            this.pnlManageSubMenu.Size = new System.Drawing.Size(321, 67);
-            this.pnlManageSubMenu.TabIndex = 4;
-            // 
-            // btnCategory
-            // 
-            this.btnCategory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCategory.FlatAppearance.BorderSize = 0;
-            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategory.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCategory.Location = new System.Drawing.Point(0, 0);
-            this.btnCategory.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.btnCategory.Size = new System.Drawing.Size(321, 56);
-            this.btnCategory.TabIndex = 1;
-            this.btnCategory.Text = "Category";
-            this.btnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCategory.UseVisualStyleBackColor = true;
-            // 
-            // btnManagement
-            // 
-            this.btnManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnManagement.FlatAppearance.BorderSize = 0;
-            this.btnManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManagement.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnManagement.Image")));
-            this.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManagement.Location = new System.Drawing.Point(0, 239);
-            this.btnManagement.Margin = new System.Windows.Forms.Padding(4);
-            this.btnManagement.Name = "btnManagement";
-            this.btnManagement.Size = new System.Drawing.Size(321, 63);
-            this.btnManagement.TabIndex = 3;
-            this.btnManagement.Text = "Manage";
-            this.btnManagement.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnMenu);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(321, 56);
-            this.panel1.TabIndex = 0;
+            this.btnBill.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBill.FlatAppearance.BorderSize = 0;
+            this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBill.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
+            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBill.Location = new System.Drawing.Point(0, 186);
+            this.btnBill.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBill.Name = "btnBill";
+            this.btnBill.Size = new System.Drawing.Size(321, 63);
+            this.btnBill.TabIndex = 6;
+            this.btnBill.Text = "Hóa Đơn";
+            this.btnBill.UseVisualStyleBackColor = true;
             // 
             // btnMenu
             // 
@@ -233,19 +179,21 @@ namespace QLGiay.UI
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(61, 56);
+            this.btnMenu.Size = new System.Drawing.Size(61, 58);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel2.Controls.Add(this.btnMenu);
             this.panel2.Controls.Add(this.statusStrip1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(321, 964);
+            this.panel2.Location = new System.Drawing.Point(321, 947);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1579, 67);
+            this.panel2.Size = new System.Drawing.Size(1579, 84);
             this.panel2.TabIndex = 1;
             // 
             // statusStrip1
@@ -256,7 +204,7 @@ namespace QLGiay.UI
             this.tssLoginName,
             this.tssBranch,
             this.tssGroup});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 41);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 58);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1579, 26);
             this.statusStrip1.TabIndex = 0;
@@ -267,24 +215,24 @@ namespace QLGiay.UI
             this.tssLoginName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.tssLoginName.ForeColor = System.Drawing.Color.White;
             this.tssLoginName.Name = "tssLoginName";
-            this.tssLoginName.Size = new System.Drawing.Size(110, 20);
-            this.tssLoginName.Text = "Tên đăng nhập:";
+            this.tssLoginName.Size = new System.Drawing.Size(114, 20);
+            this.tssLoginName.Text = "Tên đăng nhập: ";
             // 
             // tssBranch
             // 
             this.tssBranch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.tssBranch.ForeColor = System.Drawing.Color.White;
             this.tssBranch.Name = "tssBranch";
-            this.tssBranch.Size = new System.Drawing.Size(77, 20);
-            this.tssBranch.Text = "Chi nhánh:";
+            this.tssBranch.Size = new System.Drawing.Size(81, 20);
+            this.tssBranch.Text = "Chi nhánh: ";
             // 
             // tssGroup
             // 
             this.tssGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.tssGroup.ForeColor = System.Drawing.Color.White;
             this.tssGroup.Name = "tssGroup";
-            this.tssGroup.Size = new System.Drawing.Size(53, 20);
-            this.tssGroup.Text = "Nhóm:";
+            this.tssGroup.Size = new System.Drawing.Size(57, 20);
+            this.tssGroup.Text = "Nhóm: ";
             // 
             // pnlContainer
             // 
@@ -293,7 +241,7 @@ namespace QLGiay.UI
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.Location = new System.Drawing.Point(321, 0);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1579, 964);
+            this.pnlContainer.Size = new System.Drawing.Size(1579, 947);
             this.pnlContainer.TabIndex = 2;
             // 
             // pictureBox1
@@ -302,7 +250,7 @@ namespace QLGiay.UI
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1579, 964);
+            this.pictureBox1.Size = new System.Drawing.Size(1579, 947);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -321,13 +269,11 @@ namespace QLGiay.UI
             this.MinimumSize = new System.Drawing.Size(1216, 821);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lazyboyempires";
+            this.Text = "q";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlHomeSubmenu.ResumeLayout(false);
             this.pnlSideMenu.ResumeLayout(false);
-            this.pnlManageSubMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -342,20 +288,16 @@ namespace QLGiay.UI
 
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel pnlHomeSubmenu;
-        private System.Windows.Forms.Button btnLady;
-        private System.Windows.Forms.Button btnGentlemen;
+        private System.Windows.Forms.Button btnDaLat;
+        private System.Windows.Forms.Button btnAll;
         private System.Windows.Forms.Panel pnlSideMenu;
-        private System.Windows.Forms.Button btnCustomer;
-        private System.Windows.Forms.Panel pnlManageSubMenu;
-        private System.Windows.Forms.Button btnManagement;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnBill;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnlContainer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnRevenue;
-        private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tssLoginName;
         private System.Windows.Forms.ToolStripStatusLabel tssBranch;

@@ -102,6 +102,12 @@
     <Compile Include="Connection\sysmergesubscription.cs" />
     <Compile Include="Connection\sysmergesubsetfilter.cs" />
     <Compile Include="Connection\sysreplserver.cs" />
+    <Compile Include="UI\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     <Compile Include="Utilities\StringValidator.cs" />
     <Compile Include="Utilities\Usage.cs" />
     <Compile Include="Utilities\WorkingContext.cs" />
+    <EmbeddedResource Include="UI\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
