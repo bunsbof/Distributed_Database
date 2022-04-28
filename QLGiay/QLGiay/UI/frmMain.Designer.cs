@@ -37,6 +37,7 @@ namespace QLGiay.UI
             this.btnAll = new System.Windows.Forms.Button();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
             this.btnRevenue = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -67,7 +68,7 @@ namespace QLGiay.UI
             this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Margin = new System.Windows.Forms.Padding(4);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(321, 63);
+            this.btnHome.Size = new System.Drawing.Size(250, 63);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Trang Chủ";
             this.btnHome.UseVisualStyleBackColor = true;
@@ -82,7 +83,7 @@ namespace QLGiay.UI
             this.pnlHomeSubmenu.Location = new System.Drawing.Point(0, 63);
             this.pnlHomeSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHomeSubmenu.Name = "pnlHomeSubmenu";
-            this.pnlHomeSubmenu.Size = new System.Drawing.Size(321, 123);
+            this.pnlHomeSubmenu.Size = new System.Drawing.Size(250, 123);
             this.pnlHomeSubmenu.TabIndex = 2;
             // 
             // btnDaLat
@@ -113,7 +114,7 @@ namespace QLGiay.UI
             this.btnAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnAll.Name = "btnAll";
             this.btnAll.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.btnAll.Size = new System.Drawing.Size(321, 56);
+            this.btnAll.Size = new System.Drawing.Size(250, 56);
             this.btnAll.TabIndex = 0;
             this.btnAll.Text = "Nhân Viên";
             this.btnAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,6 +126,7 @@ namespace QLGiay.UI
             this.pnlSideMenu.AutoScroll = true;
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.pnlSideMenu.Controls.Add(this.btnRevenue);
+            this.pnlSideMenu.Controls.Add(this.button1);
             this.pnlSideMenu.Controls.Add(this.btnBill);
             this.pnlSideMenu.Controls.Add(this.pnlHomeSubmenu);
             this.pnlSideMenu.Controls.Add(this.btnHome);
@@ -132,7 +134,7 @@ namespace QLGiay.UI
             this.pnlSideMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(321, 1031);
+            this.pnlSideMenu.Size = new System.Drawing.Size(250, 1031);
             this.pnlSideMenu.TabIndex = 0;
             // 
             // btnRevenue
@@ -144,13 +146,31 @@ namespace QLGiay.UI
             this.btnRevenue.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnRevenue.Image = ((System.Drawing.Image)(resources.GetObject("btnRevenue.Image")));
             this.btnRevenue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRevenue.Location = new System.Drawing.Point(0, 249);
+            this.btnRevenue.Location = new System.Drawing.Point(0, 312);
             this.btnRevenue.Margin = new System.Windows.Forms.Padding(4);
             this.btnRevenue.Name = "btnRevenue";
-            this.btnRevenue.Size = new System.Drawing.Size(321, 63);
-            this.btnRevenue.TabIndex = 7;
+            this.btnRevenue.Size = new System.Drawing.Size(250, 63);
+            this.btnRevenue.TabIndex = 9;
             this.btnRevenue.Text = "Thống Kê";
             this.btnRevenue.UseVisualStyleBackColor = true;
+            this.btnRevenue.Click += new System.EventHandler(this.btnRevenue_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 249);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 63);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Hóa Đơn";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnBill
             // 
@@ -164,9 +184,9 @@ namespace QLGiay.UI
             this.btnBill.Location = new System.Drawing.Point(0, 186);
             this.btnBill.Margin = new System.Windows.Forms.Padding(4);
             this.btnBill.Name = "btnBill";
-            this.btnBill.Size = new System.Drawing.Size(321, 63);
+            this.btnBill.Size = new System.Drawing.Size(250, 63);
             this.btnBill.TabIndex = 6;
-            this.btnBill.Text = "Hóa Đơn";
+            this.btnBill.Text = "Sản Phẩm";
             this.btnBill.UseVisualStyleBackColor = true;
             // 
             // btnMenu
@@ -179,7 +199,7 @@ namespace QLGiay.UI
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(61, 58);
+            this.btnMenu.Size = new System.Drawing.Size(50, 52);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.UseVisualStyleBackColor = true;
@@ -191,9 +211,9 @@ namespace QLGiay.UI
             this.panel2.Controls.Add(this.btnMenu);
             this.panel2.Controls.Add(this.statusStrip1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(321, 947);
+            this.panel2.Location = new System.Drawing.Point(250, 953);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1579, 84);
+            this.panel2.Size = new System.Drawing.Size(1650, 78);
             this.panel2.TabIndex = 1;
             // 
             // statusStrip1
@@ -204,9 +224,9 @@ namespace QLGiay.UI
             this.tssLoginName,
             this.tssBranch,
             this.tssGroup});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 58);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 52);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1579, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1650, 26);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -239,9 +259,9 @@ namespace QLGiay.UI
             this.pnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.pnlContainer.Controls.Add(this.pictureBox1);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContainer.Location = new System.Drawing.Point(321, 0);
+            this.pnlContainer.Location = new System.Drawing.Point(250, 0);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1579, 947);
+            this.pnlContainer.Size = new System.Drawing.Size(1650, 953);
             this.pnlContainer.TabIndex = 2;
             // 
             // pictureBox1
@@ -250,7 +270,7 @@ namespace QLGiay.UI
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1579, 947);
+            this.pictureBox1.Size = new System.Drawing.Size(1650, 953);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -269,7 +289,6 @@ namespace QLGiay.UI
             this.MinimumSize = new System.Drawing.Size(1216, 821);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "q";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlHomeSubmenu.ResumeLayout(false);
@@ -297,10 +316,11 @@ namespace QLGiay.UI
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnlContainer;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnRevenue;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tssLoginName;
         private System.Windows.Forms.ToolStripStatusLabel tssBranch;
         private System.Windows.Forms.ToolStripStatusLabel tssGroup;
+        private System.Windows.Forms.Button btnRevenue;
+        private System.Windows.Forms.Button button1;
     }
 }

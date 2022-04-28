@@ -102,6 +102,24 @@
     <Compile Include="Connection\sysmergesubscription.cs" />
     <Compile Include="Connection\sysmergesubsetfilter.cs" />
     <Compile Include="Connection\sysreplserver.cs" />
+    <Compile Include="UI\CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmAddEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmAddEmp.Designer.cs">
+      <DependentUpon>frmAddEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmEditEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmEditEmp.Designer.cs">
+      <DependentUpon>frmEditEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\frmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,12 +140,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\frmStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmStatistical.Designer.cs">
+      <DependentUpon>frmStatistical.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\InputValidator.cs" />
     <Compile Include="Utilities\LoginInfo.cs" />
     <Compile Include="Utilities\Methods.cs" />
     <Compile Include="Utilities\StringValidator.cs" />
     <Compile Include="Utilities\Usage.cs" />
     <Compile Include="Utilities\WorkingContext.cs" />
+    <EmbeddedResource Include="UI\CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmAddEmp.resx">
+      <DependentUpon>frmAddEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmEditEmp.resx">
+      <DependentUpon>frmEditEmp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +179,9 @@
     </Compile>
     <EmbeddedResource Include="UI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmStatistical.resx">
+      <DependentUpon>frmStatistical.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

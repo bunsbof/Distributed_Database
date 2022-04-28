@@ -1,0 +1,64 @@
+cái nào có link server thì câu lệnh đã có trong suốt phân tán
+tất cả những câu truy vấn đã tối ưu hóa
+
+chuyển chi nhánh có làm mà chưa làm kịp, nhưng đã có procedure
+
+phải có nhân viên
+xem ds phụ thêm xóa sửa
+chọn chi nhánh get all
+
+lọc tên nhân viên
+
+chọn nhân viên tìm theo tên, sdt
+hóa đơn: ds hd theo chi nhánh
+lọc theo từ ngày đến ngày nào
+theo id nhân viên (tên)
+lọc theo tên của khách hàng
+
+thống kê mặt hàng bán chạy nhất
+thông kê khách hang fmua nhiều đò nhất
+tạo tài khoản: tạo từ trên form
+get all info bỏ vào form
+
+
+select * from Employees
+union
+select * from LINK.QLUniqlo.[dbo].Employees
+select * from LINK.QLUniqlo.[dbo].Employees
+
+select * from table where ID = (SELECT @@IDENTITY)
+
+CREATE PROCEDURE addEmployee
+       @name                NVARCHAR(50), 
+       @birthday            DATETIME , 
+       @address             NVARCHAR(50), 
+       @phone               NVARCHAR(10),
+	   @salary				decimal(18,0),
+	   @role				NVARCHAR(50),
+	   @id_branch			INT
+AS 
+BEGIN 
+     SET NOCOUNT ON 
+
+     INSERT INTO Employees
+          (                    
+            name,
+            birthday,
+            address,
+            phone,
+			salary,
+			role,
+			id_branch
+          ) 
+     VALUES 
+          ( 
+            @name,
+            @birthday,
+            @address,
+            @phone,
+			@salary,
+			@role,
+			@id_branch
+          ) 
+
+END 

@@ -71,6 +71,7 @@ namespace QLGiay.UI
                 tssLoginName.Text += WorkingContext.Instance.CurrentLoginName;
                 tssBranch.Text += WorkingContext.Instance.CurrentBranch;
                 tssGroup.Text += WorkingContext.Instance.CurrentLoginInfo.RoleName;
+            //chỗ form main này em sẽ kiểm tra để nếu là nhân viên thì sẽ ẩn nút btnDalat_Click
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -96,6 +97,12 @@ namespace QLGiay.UI
         private void btnAll_Click(object sender, EventArgs e)
         {
             openChildForm(new frmEmployee());
+            hideSubMenu();
+        }
+
+        private void btnRevenue_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmStatistical());
             hideSubMenu();
         }
     }
